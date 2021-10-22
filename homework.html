@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			document.write('<h2>练习题1第1题</h2>');
+			let aa=2,bb=2;
+			if(aa>bb){
+				document.write("aa大于bb")
+			}else if(aa<bb){
+				document.write("aa小于bb")
+			}else{
+				document.write("aa等于bb")
+			}
+			document.write('<hr>');
+			
+			document.write('<h2>练习题2第2题</h2>');
+			let q=6;
+			if(q%5===0){
+			document.write('可以被5整除');
+			}else{
+				document.write('不可以被5整除');
+			}
+			document.write('<hr>');
+			
+			document.write('<h2>练习题2第3题</h2>');
+			let i;
+			for(i=0;i<=100;i++){
+				if(i%2===0)
+				document.write(i+' ');
+			}
+			document.write('<hr>');
+			
+			document.write('<h2>练习题2第4题</h2>');
+			let j=0;
+			while(j<=100){
+				if(j%7===0){
+				document.write(j+' ');
+				}
+				j++;
+			}
+			document.write('<hr>');
+			
+			document.write('<h2>练习题2第5题</h2>');
+			// let a=Math.floor(Math.random()*100);
+			// let b=Math.floor(Math.random()*100);
+			// let c=Math.floor(Math.random()*100);
+			// function than(a,b,c){
+			// 	let max=a;
+			// 	if(a>b){
+			// 		max=a;
+			// 	}else{
+			// 		max=b;
+			// 	}
+			// 	if(max>c){
+			// 		return max;
+			// 	}else{
+			// 		return c;
+			// 	}
+			// }
+			// document.write(than(a,b,c));
+			let a=110,b=100,c=78;
+			let max=(a>b?a:b)>c?(a>b?a:b):c;;
+			document.write(max);
+			// document.write(Math.max(a,b,c));
+			document.write('<hr>');
+			
+			document.write('<h2>练习题3第1题</h2>');
+			document.write('100以内的偶数：')
+			for(let x=0;x<=100;x++)
+			if(x%2===0){
+				document.write(x+' ');
+			}
+			document.write('<br>');
+			document.write('100以内的奇数：')
+			for(let y=0;y<=100;y++)
+			if(y%2!==0){
+				document.write(y+' ');
+			}
+			
+			// let z;
+			// let arr[z];
+			// for(z=0;z<=100;z++){
+			// 	if(z%2===0){
+			// 	document.write(z+' ');
+			// 	}else{
+			// 	document.write(z+' ');
+			// 	}
+			// }
+			document.write('<hr>');
+			document.write('<h2>练习题3第2题</h2>');
+			
+			document.write('<h3>不会做</h3>');
+			document.write('<hr>');
+			document.write('<h2>第3题</h2>');
+			let input1=document.createElement('input');
+			document.body.appendChild(input1);
+			let input2=document.createElement('input');
+			document.body.appendChild(input2);
+			let btn=document.createElement('button');
+			document.body.appendChild(btn);
+			btn.textContent='比较';
+			btn.onchange=function(){
+				let num1=input1.value;
+				let num2=input2.value;
+				if (num1===' '||num2===' '||isNaN(num1)||isNaN(num2)){
+					// alert('错误信息');
+					document.write('错误信息');
+				}else if(num1===Number(num1)&&num2===Number(num2)&&num1>num2){
+					document.write('a大于b');
+				}else if(num1===Number(num1)&&num2===Number(num2)&&num1===num2){
+					let para=document.createElement('p');
+					document.body.appendChild(p);
+					para.textContent='a等于b';
+					// document.write('a等于b');
+				}else if(num1===Number(num1)&&num2===Number(num2)&&num1<num2){
+					document.write('a小于b');
+				}
+			}
+		</script>
+	</body>
+</html>
